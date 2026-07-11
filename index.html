@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>La Rosa Restaurant</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>La Rosa</h1>
+
+<p>
+Итальянская кухня • Уютная атмосфера • Лучшие вечера
+</p>
+
+
+<div>
+
+<button class="red"
+onclick="scrollToSection('menu')">
+Меню
+</button>
+
+
+<button class="light"
+onclick="scrollToSection('booking')">
+Бронь
+</button>
+
+</div>
+
+
+</header>
+
+
+
+
+p>
+<b>12 €</b>
+</div> 
+
+<section id="menu">
+
+<h2>Наше меню</h2>
+
+<div class="menu-container">
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+
+<h3>🍕 Маргарита</h3>
+
+<p>Томаты, моцарелла, свежий базилик</p>
+
+<b>12 €</b>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1628840042765-356cda07504e">
+
+<h3>🍕 Пепперони</h3>
+
+<p>Острая салями, сыр, томатный соус</p>
+
+<b>15 €</b>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601">
+
+<h3>🍝 Карбонара</h3>
+
+<p>Паста, бекон, сливочный соус</p>
+
+<b>14 €</b>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9">
+
+<h3>🍝 Болоньезе</h3>
+
+<p>Домашний мясной соус и паста</p>
+
+<b>16 €</b>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+
+<h3>🥩 Стейк Рибай</h3>
+
+<p>Мраморная говядина с овощами</p>
+
+<b>29 €</b>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288">
+
+<h3>🐟 Лосось</h3>
+
+<p>Запеченный лосось с лимоном</p>
+
+<b>25 €</b>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1546793665-c74683f339c1">
+
+<h3>🥗 Цезарь</h3>
+
+<p>Курица, салат, пармезан</p>
+
+<b>11 €</b>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9">
+
+<h3>🍰 Тирамису</h3>
+
+<p>Итальянский десерт с кофе</p>
+
+<b>8 €</b>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+
+<h3>☕ Капучино</h3>
+
+<p>Нежный кофе с молочной пеной</p>
+
+<b>4 €</b>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section id="booking">
+
+
+<h2>Бронирование столика</h2>
+
+
+<div class="box">
+
+
+<form id="bookingForm">
+
+
+<input placeholder="Ваше имя" required>
+
+<input placeholder="Телефон" required>
+
+<input type="date" required>
+
+
+<select>
+
+<option>2 человека</option>
+<option>4 человека</option>
+<option>6 человек</option>
+
+</select>
+
+
+<button class="red">
+
+Забронировать
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="reviews">
+
+
+<h2>Отзывы гостей</h2>
+
+
+<div id="reviewsList">
+
+
+<div class="review">
+
+<h3>Анна ⭐⭐⭐⭐⭐</h3>
+
+<p>
+Очень вкусная кухня и прекрасная атмосфера!
+</p>
+
+</div>
+
+
+<div class="review">
+
+<h3>Давид ⭐⭐⭐⭐⭐</h3>
+
+<p>
+Отличное место для ужина.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="box">
+
+
+<h3>
+Оставьте свой отзыв
+</h3>
+
+
+<input 
+id="name"
+placeholder="Ваше имя">
+
+
+<textarea
+id="reviewText"
+placeholder="Ваш отзыв">
+</textarea>
+
+
+
+<button class="red" onclick="addReview()">
+
+Добавить отзыв
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<h3>La Rosa Restaurant</h3>
+
+<p>
+📍 Центральная улица, 12
+</p>
+
+<p>
+☎ +994 50 123-45-67
+</p>
+
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
